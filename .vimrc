@@ -25,7 +25,6 @@ Plugin 'scrooloose/nerdtree'
 
 " vim-airline
 Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 
 " vim-go (golang)
 Plugin 'fatih/vim-go'
@@ -38,6 +37,9 @@ Plugin 'artur-shaik/vim-javacomplete2'
 
 " ale
 Plugin 'w0rp/ale'
+
+" NERD commenter
+"Plugin 'aluriak/nerdcommenter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -77,6 +79,9 @@ set laststatus=2
 
 " full color in windows xshell
 set t_Co=256
+
+" enable the tabline on the top
+let g:airline#extensions#tabline#enabled = 1
 
 " Setting of vim-go
 " vim-go need vim7.4+,this setting make go run under 7.4
@@ -166,6 +171,28 @@ nmap sn <Plug>(ale_next_wrap)
 "nmap <Leader>d :ALEDetail<CR>
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Setting of NERD commenter
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sineatos's settings
@@ -173,4 +200,4 @@ set number
 set tabline=4
 set tabstop=4
 syntax on
-
+let mapleader=','
