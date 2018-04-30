@@ -5,12 +5,20 @@
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle 
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible              	" be iMproved, required
+filetype off                  		" required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+if has('win32')
+	" set runtime path in Windows
+	set rtp+=$VIM/vimfiles/bundle/Vundle.vim
+	call vundle#begin('$VIM/vimfiles/bundle/')
+else
+	" set runtime path in Linux,Unix and Mac
+	set rtp+=~/.vim/bundle/Vundle.vim
+	call vundle#begin()
+endif
+
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
