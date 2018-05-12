@@ -210,3 +210,9 @@ set tabline=4
 set tabstop=4
 syntax on
 let mapleader=','
+
+" shortcut of tab switch
+nmap <C-b>n :bnext<CR>
+nmap <C-b>p :bprev<CR>
+"imap <C-b>n <esc>:bnext<CR>i
+"imap <C-b>p <esc>:bprev<CR>i
