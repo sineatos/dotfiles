@@ -43,6 +43,9 @@ Plugin 'davidhalter/jedi-vim'
 " vim-javacpmplete2 (java)
 Plugin 'artur-shaik/vim-javacomplete2'
 
+" tarbar (need ctags)
+Plugin 'majutsushi/tagbar'
+
 " ale
 Plugin 'w0rp/ale'
 
@@ -204,6 +207,11 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tarbar setting
+nmap <F8> :TagbarToggle<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
+
 " Sineatos's settings
 set number
 set tabline=4
