@@ -46,6 +46,9 @@ Plugin 'artur-shaik/vim-javacomplete2'
 " tarbar (need ctags)
 Plugin 'majutsushi/tagbar'
 
+" closetag.vim
+Plugin 'docunext/closetag.vim'
+
 " ale
 Plugin 'w0rp/ale'
 
@@ -212,7 +215,10 @@ let g:NERDTrimTrailingWhitespace = 1
 nmap <F8> :TagbarToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
+" closetag.vim
+:let g:closetag_html_style=1
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
 " Sineatos's settings
 set number
 set tabline=4
