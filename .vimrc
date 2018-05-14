@@ -98,6 +98,7 @@ let g:airline#extensions#tabline#enabled = 1
 " vim-go need vim7.4+,this setting make go run under 7.4
 " let g:go_version_warning = 0
 
+" set `export TERM=xterm-256color` in /etc/environment
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Setting of vim-javacomplete2
