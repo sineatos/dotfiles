@@ -224,6 +224,7 @@ set number
 set tabline=4
 set tabstop=4
 syntax on
+color ron
 let mapleader=','
 
 " shortcut of tab switch
