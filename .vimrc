@@ -52,6 +52,9 @@ Plugin 'docunext/closetag.vim'
 " vim-markdown
 Plugin 'plasticboy/vim-markdown'
 
+" csv.vim
+Plugin 'chrisbra/csv.vim'
+
 " ale
 Plugin 'w0rp/ale'
 
