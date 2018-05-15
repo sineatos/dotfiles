@@ -49,6 +49,9 @@ Plugin 'majutsushi/tagbar'
 " closetag.vim
 Plugin 'docunext/closetag.vim'
 
+" vim-markdown
+Plugin 'plasticboy/vim-markdown'
+
 " ale
 Plugin 'w0rp/ale'
 
@@ -219,6 +222,18 @@ nmap <F8> :TagbarToggle<CR>
 :let g:closetag_html_style=1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
+" vim markdown preview setting
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_folding_style_pythonic = 1
+let g:vim_markdown_toc_autofit = 1
+let g:vim_markdown_fenced_languages = ['c++=cpp', 'viml=vim', 'bash=sh', 'ini=dosini', 'python=py', 'golang=go', 'java=java', 'javascript=js']
+let g:vim_markdown_autowrite = 1
+set conceallevel=2
+
+" enable LaTex math
+let g:vim_markdown_math = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sineatos's settings
 set number
 set tabline=4
