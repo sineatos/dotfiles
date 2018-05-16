@@ -183,15 +183,41 @@ let g:ale_statusline_format = ['X %d','! %d','V OK']
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 
-" in normal mode, sp: prep E&W info; sn: next E&W info
-nmap sp <Plug>(ale_previous_wrap)
-nmap sn <Plug>(ale_next_wrap)
+" navigate between errors quickly
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+
+" let ale run when saving files
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_save = 1
+
+" shows on loclist and quickfix
+let g:ale_set_loclist = 1
+let g:ale_set_quickfix = 1
+let g:ale_open_list = 0
+
 
 " <Leader>s gamma check on/off
 "nmap <Leader>s :ALEToggle<CR>
 " <Leader>d E&W detail information
 "nmap <Leader>d :ALEDetail<CR>
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
+let g:ale_linters = {
+\	'c': ['gcc'],
+\	'c++': ['gcc'],
+\	'go': ['gofmt','go vet'],
+\	'java': ['javac'],
+\	'python':['flake8'],
+\	'text':[],
+\}
+
+let g:ale_fixers = {
+\	'python':['autopep8'],
+\}
+
+let g:ale_java_javac_options = '-encoding UTF-8  -J-Duser.language=en'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Setting of NERD commenter
@@ -250,3 +276,13 @@ nmap <C-b>n :bnext<CR>
 nmap <C-b>p :bprev<CR>
 "imap <C-b>n <esc>:bnext<CR>i
 "imap <C-b>p <esc>:bprev<CR>i
+
+" shortcut
+" <F3>: NERDTree
+" <F4>: Java Smart Import
+" <F5>: Java Import
+" <F6>: Java Import Missing
+" <F7>: Remove useless Import
+" <F8>: Tarbar
+" ccopen: Open QuickFix
+" cclose: Close QuickFix
