@@ -12,6 +12,8 @@ filetype off                  		" required
 if has('win32')
 	" set runtime path in Windows
 	set rtp+=$VIM/vimfiles/bundle/Vundle.vim
+	set pythondll=D:/path/to/python36.dll
+	"set pythonthreedll=D:/path/to/python36.dll
 	call vundle#begin('$VIM/vimfiles/bundle/')
 else
 	" set runtime path in Linux,Unix and Mac
