@@ -63,6 +63,9 @@ Plugin 'w0rp/ale'
 " NERD commenter
 "Plugin 'aluriak/nerdcommenter'
 
+" vim-autoformat
+Plugin 'chiel92/vim-autoformat'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -265,6 +268,18 @@ set conceallevel=2
 let g:vim_markdown_math = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-autoformat
+noremap <F2> :Autoformat<CR>
+inoremap <F2> <ESC>:Autoformat<CR>i
+
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
+let g:autoformat_remove_trailing_spaces = 0
+
+" need `astyle` for c,c++,java (sudo apt install astyle)
+" need `tidy` for xml,html,etc (sudo apt install tidy)
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sineatos's settings
 set number
 set tabline=4
@@ -280,6 +295,7 @@ nmap <C-b>p :bprev<CR>
 "imap <C-b>p <esc>:bprev<CR>i
 
 " shortcut
+" <F2>: reformat code
 " <F3>: NERDTree
 " <F4>: Java Smart Import
 " <F5>: Java Import
