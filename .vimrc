@@ -61,7 +61,7 @@ Plugin 'chrisbra/csv.vim'
 Plugin 'w0rp/ale'
 
 " NERD commenter
-"Plugin 'aluriak/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 
 " vim-autoformat
 Plugin 'chiel92/vim-autoformat'
@@ -247,6 +247,12 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
+" shortcut
+" <leader>ca	|	switch comment style
+" <leader>cc	|	comment single line
+" <leader>cs	|	sexy comment
+" <leader>cu	|	uncomment single line/selected block
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tarbar setting
 nmap <F8> :TagbarToggle<CR>
@@ -304,3 +310,5 @@ nmap <C-b>p :bprev<CR>
 " <F8>: Tarbar
 " ccopen: Open QuickFix
 " cclose: Close QuickFix
+" <leader>cc: comment
+" <leader>cu: uncomment
