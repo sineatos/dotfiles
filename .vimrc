@@ -39,6 +39,9 @@ Plugin 'bling/vim-airline'
 " vim-go (golang)
 Plugin 'fatih/vim-go'
 
+" vim-gocode (golang completion)
+"Plugin 'blackrush/vim-gocode'
+
 " jedi-vim (python)
 Plugin 'davidhalter/jedi-vim'
 
@@ -170,6 +173,13 @@ augroup initJavaSetting
 	autocmd FileType java nmap <silent> <buffer> <leader>jn <Plug>(JavaComplete-Generate-NewClass)
 	autocmd FileType java nmap <silent> <buffer> <leader>jN <Plug>(JavaComplete-Generate-ClassInFile)
 augroup END
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Setting of golang (vim-go & vim-gocode)
+" use `:help vim-go` for more help
+autocmd FileType go nmap <F5> :GoImports<CR>
+autocmd FileType go imap <F5> <esc>:GoImports<CR>
+autocmd FileType go vmap <F5> :GoImports<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Setting of ale
@@ -312,3 +322,8 @@ nmap <C-b>p :bprev<CR>
 " cclose: Close QuickFix
 " <leader>cc: comment
 " <leader>cu: uncomment
+" :bdelete name/num: delete buffer
+" :badd name/num: add buffer
+" <F5> or :GoImports : Go Import/Go Remove uesless Import
+" <C-p> or :GoDef: jump into the define place
+" :GoDoc :open the doc of symbol
