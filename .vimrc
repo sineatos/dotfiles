@@ -2,6 +2,24 @@
 
 " Need: git
 
+" shortcut
+" mapleader: ,
+" <F2>: reformat code
+" <F3>: NERDTree
+" <F4>: Java Smart Import
+" <F5>: Java Import
+" <F6>: Java Import Missing
+" <F7>: Remove useless Import
+" <F8>: Tarbar
+" ccopen: Open QuickFix
+" cclose: Close QuickFix
+" <leader>cc: comment
+" <leader>cu: uncomment
+" :bdelete name/num: delete buffer
+" :badd name/num: add buffer
+" <F5> or :GoImports : Go Import/Go Remove uesless Import
+" <C-p> or :GoDef: jump into the define place
+" :GoDoc :open the doc of symbol
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle 
@@ -312,21 +330,3 @@ nmap <C-b>n :bnext<CR>
 nmap <C-b>p :bprev<CR>
 "imap <C-b>n <esc>:bnext<CR>i
 "imap <C-b>p <esc>:bprev<CR>i
-
-" shortcut
-" <F2>: reformat code
-" <F3>: NERDTree
-" <F4>: Java Smart Import
-" <F5>: Java Import
-" <F6>: Java Import Missing
-" <F7>: Remove useless Import
-" <F8>: Tarbar
-" ccopen: Open QuickFix
-" cclose: Close QuickFix
-" <leader>cc: comment
-" <leader>cu: uncomment
-" :bdelete name/num: delete buffer
-" :badd name/num: add buffer
-" <F5> or :GoImports : Go Import/Go Remove uesless Import
-" <C-p> or :GoDef: jump into the define place
-" :GoDoc :open the doc of symbol
