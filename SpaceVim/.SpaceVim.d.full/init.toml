@@ -25,7 +25,7 @@
     # Enable vim compatible mode, avoid changing origin vim key bindings
     vimcompatible = true
 
-    filetree_direction = "left"
+    filetree_direction = "right"
 
     # chinese vim help doc
     vim_help_language = "cn"
@@ -68,14 +68,32 @@
 [[layers]]
   name = 'shell'
   default_position = 'bottom'
-  default_height = 30
+  default_height = 20
+
+[[layers]]
+  name = 'VersionControl'
+
+# % apt install clang && set clang location
+# [[layers]]
+#  name = "lang#c"
+#  enable_clang_syntax_highlight = true
+#  clang_executable = "/usr/bin/clang"
+#  [layer.clang_std]
+#    c = "c11"
+#    cpp = "c++1z"
+#    objc = "c11"
+#    objcpp = "c++1z"
+
+# % need go tool chain && run :GoInstallBinaries
+[[layers]]
+  name = "lang#go"
 
 # [[layers]]
 #  name = "lang#java"
 
-# need go tool chain && run :GoInstallBinaries
+# (+python3)
 [[layers]]
-  name = "lang#go"
+  name = "lang#python"
 
 [[layers]]
   name = "lang#vim"
