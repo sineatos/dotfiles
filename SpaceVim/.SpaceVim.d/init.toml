@@ -54,6 +54,7 @@
   name = "colorscheme"
 
 # Fuzzy search (+python3)
+# if use nvim: pip install pynvim
 [[layers]]
   name = "leaderf"
 

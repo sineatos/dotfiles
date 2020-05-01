@@ -23,7 +23,9 @@ SpaceVim的配置，SpaceVim的安装方法可在SpaceVim的官网查询
 
 注意：由于部分插件需要vim支持+python的属性，如果系统的vim没有该选项且升级比较麻烦，可安装neovim代替，安装以后在`~/.bashrc`中设置别名：`alias vim=nvim`即可。
 
-## .SpaceVim.d.full
+如果使用的是neovim，有可能nvim不支持+python，需要先`pip install pynvim`，才能使用python相关的插件
+
+## .SpaceVim.d
 
 配置了常用的插件·
 
