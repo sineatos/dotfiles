@@ -25,6 +25,11 @@ SpaceVim的配置，SpaceVim的安装方法可在SpaceVim的官网查询
 
 如果使用的是neovim，有可能nvim不支持+python，需要先`pip install pynvim`，才能使用python相关的插件
 
+- 加速安装：
+  1. `git clone https://gitee.com/spacevim/SpaceVim.git`
+  2. `mv 项目名 ~/.SpaceVim`
+  3. 执行安装命令
+
 ```
 # 安装
 curl -sLf https://spacevim.org/install.sh | bash
