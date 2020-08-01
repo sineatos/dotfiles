@@ -17,7 +17,7 @@ my dot files such as tmux, vim etc
   - 否则插件目录为`~/.vim/bundle/`
 3.  需要先安装`Vundle.vim`在插件目录中，可在github上找。
 
-## SpaceVim
+## .SpaceVim.d
 
 SpaceVim的配置，SpaceVim的安装方法可在SpaceVim的官网查询
 
@@ -38,7 +38,6 @@ curl -sLf https://spacevim.org/install.sh | bash
 curl -sLf https://spacevim.org/install.sh | bash -s -- --uninstall
 ```
 
-## .SpaceVim.d
 
 配置了常用的插件·
 
