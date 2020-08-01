@@ -31,6 +31,13 @@ SpaceVim的配置，SpaceVim的安装方法可在SpaceVim的官网查询
 
 1. 将`.SpaceVim.d.full/`目录复制到`$HOME`，并重名为`.SpaceVim.d`。
 2. `init.toml`上以说明一半需要另外安装什么工具，如果没有说明但运行中报错的，根据错误提示安装对应的工具即可。
+3. 安装nerd字体：
+  ```
+  # macOS，安装以后更改终端的字体为nerd
+  brew search font
+  brew tap homebrew/cask-fonts
+  brew cask install font-saucecodepro-nerd-font
+  ```
 
 ## maven
 

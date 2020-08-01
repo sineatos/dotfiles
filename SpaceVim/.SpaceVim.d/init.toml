@@ -11,6 +11,8 @@
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
     enable_guicolors = false
+
+    relativenumber = false
     
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
@@ -86,8 +88,8 @@
 #    objcpp = "c++1z"
 
 # % need go tool chain && run :GoInstallBinaries
-[[layers]]
-  name = "lang#go"
+# [[layers]]
+#  name = "lang#go"
 
 # [[layers]]
 #  name = "lang#java"
