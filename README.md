@@ -29,7 +29,7 @@ SpaceVim的配置，SpaceVim的安装方法可在SpaceVim的官网查询
 # 安装
 curl -sLf https://spacevim.org/install.sh | bash
 
-# 写在
+# 卸载
 curl -sLf https://spacevim.org/install.sh | bash -s -- --uninstall
 ```
 
