@@ -25,6 +25,14 @@ SpaceVim的配置，SpaceVim的安装方法可在SpaceVim的官网查询
 
 如果使用的是neovim，有可能nvim不支持+python，需要先`pip install pynvim`，才能使用python相关的插件
 
+```
+# 安装
+curl -sLf https://spacevim.org/install.sh | bash
+
+# 写在
+curl -sLf https://spacevim.org/install.sh | bash -s -- --uninstall
+```
+
 ## .SpaceVim.d
 
 配置了常用的插件·
